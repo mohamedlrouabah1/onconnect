@@ -39,6 +39,8 @@ const Login = ({ authenticated }) => {
       <div className="login-content">
       <div className="or-separator">
         <h1 className="login-title">Login</h1>
+        <p className="login-subtitle">test user name : devuser@example.com</p>
+        <p className="login-subtitle">test user password: 1234</p>
         </div>
         <LoginForm />
         <div className="or-separator">
