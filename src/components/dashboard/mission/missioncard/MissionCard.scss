@@ -1,0 +1,55 @@
+@import '~bootstrap/scss/bootstrap';
+
+.mission-container {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.mission-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid #434242;
+  margin-top: 1rem;
+}
+
+.slick-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.slick-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.mission-footer {
+  margin-top: 1rem;
+}
+
+.mission-carousel-card {
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1) !important;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  &.paid {
+    border-color: #ffffff;
+  }
+
+  &.unpaid {
+    background-color: #81d0df !important;
+    border-color : #81d0df ;
+    .btn-primary {
+      background-color: #087592 ;
+      border-color: #087592 ;
+    }
+  }
+}
+

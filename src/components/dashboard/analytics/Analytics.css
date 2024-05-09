@@ -1,0 +1,44 @@
+/* ProgressChart.css */
+.progress-chart-container {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+}
+.progress-svg {
+  transform: rotate(-90deg);
+}
+
+.circle-progress {
+  transition: stroke-dashoffset 0.6s ease 0s;
+}
+
+.progress-text {
+  fill: #333;
+  font-size: 18px; 
+  font-weight: bold;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.progress-labels {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px; 
+}
+
+.progress-label {
+  font-size: 14px; 
+  margin-left: 0.5rem; 
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.progress-label strong {
+  color: #4e73df; 
+  font-weight: bold;
+  padding-right: 5px; 
+}
+  

@@ -1,0 +1,89 @@
+.signup-container {
+    text-align: center;
+}
+
+.signup-content {
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 1.3rem;
+    width: 33rem; 
+    display: inline-block;
+    margin-top: 3rem;
+    vertical-align: middle;
+    position: relative;    
+    padding: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.social-signup {
+    display: flex;
+    justify-content: space-between; /* This will space out the buttons evenly */
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
+    margin-bottom: 15px; /* Spacing between this row and other elements */
+}
+
+.social-btn {
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 10px;
+    color: #888888;
+    text-decoration: none;
+    flex: 1; 
+    margin-right: .5rem;
+    background-color: #f1f1f1;
+} 
+
+.social-btn:hover {
+    background-color: #e8e8e8;
+    color: #888888;
+}
+
+.social-btn.google img{
+    height: auto; /* maintain aspect ratio */
+    margin-left: -.6rem; /* no left margin needed */
+    margin-top: 0; /* align img with text properly */
+}
+/* Adjust for the new flex layout */
+.social-btn.facebook img,
+.social-btn.github img{
+    height: auto; /* maintain aspect ratio */
+    margin-left: 0; /* no left margin needed */
+    margin-top: 0; /* align img with text properly */
+}
+/* Ensure images are aligned and have the correct size */
+.social-btn img {
+    margin-right: .35rem; /* Space between image and text */
+    width: 1.5rem; /* Standard width */
+    height: 1rem; /* Standard height to maintain aspect ratio */
+}
+
+.login-link {
+    color: rgba(83, 83, 83, 0.65);
+    font-size: .8rem;
+}
+
+.signup-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    color :  rgba(43, 42, 42, 0.65);
+}
+
+.signup-btn{
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    border-color: rgba(248, 248, 248, 0);
+    width: 10rem;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    flex: 1; 
+    margin-left: -19rem;
+    background-color: #a19f9f;
+}
+.signup-btn:hover {
+    background-color: #c2c2c2;
+    color: #928e8e;
+}

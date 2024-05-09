@@ -1,0 +1,45 @@
+.scheduler-container {
+  height: 70%;
+}
+
+.scheduler-container .MainLayout-container{
+  max-height: 90vh;
+  overflow-y: auto;
+  
+  scrollbar-width: thin; 
+  scrollbar-color: #dee2e6 #f5f5f5; 
+
+  &::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #dee2e6;
+    border-radius: 1rem;
+    border: 3px solid #f5f5f5;
+  }
+}
+
+.agenda-container{
+}
+
+.agenda-container .dx-calendar {
+  width: 268em;
+}
+.project-deliveries-container{
+    border: 1px solid gainsboro;
+    border-radius: 0.15rem;
+    margin-top: 20px;
+}
+
+.right-content {
+  display: flex;
+  justify-content: flex-end;
+}
+.left-content{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}

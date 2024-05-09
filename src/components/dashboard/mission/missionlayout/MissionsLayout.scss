@@ -1,0 +1,32 @@
+
+.carousel-control-next{
+  background-color: rgb(229, 108, 108);
+  width: fit-content;
+  height: fit-content;
+}
+
+.carousel-control-prev{
+  background-color: rgb(176, 51, 51);
+  width: fit-content;
+  height: fit-content;
+} 
+
+.mission-card-container{
+  max-height: 18rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin; 
+  scrollbar-color: #dee2e6 #f5f5f5; 
+
+  &::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #dee2e6;
+    border-radius: 1rem;
+    border: 3px solid #f5f5f5;
+  }
+}

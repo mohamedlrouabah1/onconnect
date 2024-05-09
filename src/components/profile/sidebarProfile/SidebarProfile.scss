@@ -1,0 +1,68 @@
+@keyframes slideExpand {
+  0% {
+      width: 2rem;
+  }
+  100% {
+      width: 16rem;
+  }
+}
+.ProfileContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 0.6rem;
+    margin-top: 2rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    background-color: rgba(128, 128, 128, 0.233);
+
+    &.expanded {
+      animation: slideExpand 1s forwards;
+    }
+  }
+
+  
+  .ProfileImage {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10%;
+  }
+  
+  .DefaultAvatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    span {
+      font-weight: bold;
+    }
+  }
+  
+  .ProfileDetails {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ProfileName {
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .ProfileEmail {
+    font-size: 0.8rem;
+    color: gray;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .CustomDropdownToggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right :0.5rem;
+    margin-left: 1rem;
+  }

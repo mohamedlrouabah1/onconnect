@@ -1,0 +1,191 @@
+$A4-width: 100%;
+$A4-height: 180mm;
+$A4-margin: 20px;
+$base-font-size: 14px; 
+
+.preview-container {
+  display: flex;
+  background-color: gray;
+  justify-content: center; 
+  align-items: center; 
+  opacity: 0.5;
+  border-radius: 0.5rem;
+  width: $A4-width;
+  height: $A4-height;
+  margin: auto; 
+}
+
+.preview {
+  background-color: white;
+  width: calc(100% - #{$A4-margin * 2});
+  height: calc(100% - #{$A4-margin * 2});
+  padding: $A4-margin;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  font-size: $base-font-size; 
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin; 
+  scrollbar-color: #dee2e6 #f5f5f5; 
+
+  &::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #dee2e6;
+    border-radius: 1rem;
+    border: 3px solid #f5f5f5;
+  }
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $A4-margin;
+  font-size: 0.875 * $base-font-size;
+}
+
+.company-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.company-info, .client-info, .invoice-title {
+  flex: 1;
+}
+.invoice-header .company-info .company-address p {
+  text-align: left;
+  margin: 0;
+}
+
+.invoice-header .client-info p {
+  text-align: right;
+  margin: 0;
+}
+
+.invoice-title h1 {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.5 * $base-font-size;
+}
+
+.invoice-title p {
+  display:flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+
+.invoice-main {
+  margin-top: 20px;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8 * $base-font-size;
+
+  th {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+  }
+
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+}
+
+.invoice-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.875 * $base-font-size;
+  .total-due p:last-child{
+      margin: 0;
+      text-align: right;
+      font-weight: bold;
+      color: red;
+  }
+  
+}
+
+.invoice-footer {
+  font-size: 0.875 * $base-font-size;
+  .additional-info p{
+    margin: 0;
+  }
+  .contact-info p{
+    text-align: right;
+    margin: 0;
+  }
+  
+  .company-representative p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+
+.facture-form {
+  background: #333;
+  color: #343333;
+  padding: 20px;
+  border-radius: 8px;
+  .facture-tabs {
+    border-bottom: 1px solid #222;
+    .nav-item {
+      margin-right: 5px;
+    }
+    .nav-link {
+      background: #222;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      color: #fff;
+      &:hover {
+        border-color: #555;
+      }
+      &.active {
+        background-color: #555;
+        border-color: #555;
+      }
+    }
+  }
+  .tab-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    button {
+      background: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      &:hover {
+        background: #45a049;
+      }
+    }
+  }
+}

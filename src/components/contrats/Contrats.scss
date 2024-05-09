@@ -1,0 +1,91 @@
+// .contracts-container {
+//     .mb-3 {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       padding-bottom: 1rem;
+  
+//       h1 {
+//         font-size: 2rem; // Ajustez selon vos besoins
+//       }
+  
+//       .text-end {
+//         display: flex;
+//         justify-content: flex-end;
+  
+//         .input-group {
+//           width: 100%;
+//           max-width: 300px; // Ajustez selon vos besoins
+  
+//           .form-control {
+//             border-top-right-radius: 0;
+//             border-bottom-right-radius: 0;
+//           }
+  
+//           .btn {
+//             border-top-left-radius: 0;
+//             border-bottom-left-radius: 0;
+//           }
+//         }
+//       }
+  
+//       .btn {
+//         margin-left: 0.5rem;
+//       }
+//     }
+  
+
+  
+//     .table {
+//       // Ajoutez ici les styles pour le tableau
+//     }
+  
+//     thead {
+//       background-color: #333; // Utilisez la couleur d'arrière-plan de l'image
+//       color: white;
+  
+//       th {
+//         border: none;
+//         text-align: left;
+//       }
+//     }
+  
+//     tbody {
+//       tr {
+//         td {
+//           border-top: none;
+//           vertical-align: middle;
+  
+//           &:first-child {
+//             font-weight: bold;
+//           }
+  
+//           .badge {
+//             padding: 0.5em 1em;
+//             font-size: 0.875rem;
+//             border-radius: 10px;
+//             text-transform: uppercase;
+  
+//             &.por-vencer {
+//               background-color: #ffc107;
+//             }
+  
+//             &.vencida {
+//               background-color: #dc3545;
+//             }
+  
+//             &.pagado {
+//               background-color: #28a745;
+//             }
+  
+//             &.anulado {
+//               background-color: #6c757d;
+//             }
+  
+//             // Ajoutez d'autres statuts si nécessaire
+//           }
+//         }
+//       }
+//     }
+//   }
+  
