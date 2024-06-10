@@ -101,8 +101,8 @@ class App extends Component {
           />
         )}
         <div className="app-top-box">
-          <Routes>
-            <Route path="/" element={<Home />} />
+          <Routes >
+            <Route path="/onconnect" element={<Home />} />
             <Route
               path="/profile"
               element={
@@ -215,7 +215,7 @@ class App extends Component {
               path="/login"
               element={
                 this.state.authenticated ? (
-                  <Navigate to="/" replace />
+                  <Navigate to="/onconnect" replace />
                 ) : (
                   <Login authenticated={this.state.authenticated} />
                 )
@@ -225,7 +225,7 @@ class App extends Component {
               path="/signup"
               element={
                 this.state.authenticated ? (
-                  <Navigate to="/" replace />
+                  <Navigate to="/onconnect" replace />
                 ) : (
                   <Signup authenticated={this.state.authenticated} />
                 )
@@ -235,7 +235,7 @@ class App extends Component {
               path="/oauth2/redirect"
               element={
                 this.state.authenticated ? (
-                  <Navigate to="/" replace />
+                  <Navigate to="/onconnect" replace />
                 ) : (
                   <OAuth2RedirectHandler />
                 )

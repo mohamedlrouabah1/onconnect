@@ -20,7 +20,7 @@ const Login = ({ authenticated }) => {
   const location = useLocation();
 
   if (authenticated) {
-    navigate("/", { state: { from: location } });
+    navigate("/onconnect", { state: { from: location } });
   }
 
   // Handle the error if it exists

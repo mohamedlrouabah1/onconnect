@@ -9,7 +9,7 @@ const AppHeader = () => {
     <header className="app-header">
       <div className="container">
         <div className="app-branding">
-          <Link to="/">
+          <Link to="/onconnect">
             <img src={logo} alt="OnConnect Logo" />
           </Link>
         </div>

@@ -24,7 +24,7 @@ const Signup = ({ authenticated }) => {
   };
 
   if (authenticated) {
-    return navigate("/", { state: { from: location } });
+    return navigate("/onconnect", { state: { from: location } });
   }
   if (submitted) {
     toast.success("Choose your Role and Complete your registration!");
