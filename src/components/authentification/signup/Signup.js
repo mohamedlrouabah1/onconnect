@@ -43,7 +43,7 @@ const Signup = ({ authenticated }) => {
         </div>
         <SocialSignup />
         <span className="login-link">
-          Already have an account? <Link to="/login">Login</Link>
+          Already have an account? <Link to="/onconnect/login">Login</Link>
         </span>
       </div>
     {/* </div> */}

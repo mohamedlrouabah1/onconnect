@@ -41,6 +41,7 @@ const Login = ({ authenticated }) => {
         <h1 className="login-title">Login</h1>
         <p className="login-subtitle">test user name : devuser@example.com</p>
         <p className="login-subtitle">test user password: 1234</p>
+        <p className="login-subtitle">after login if crash append pls <br/>set /connect in the url its due to github static page</p>
         </div>
         <LoginForm />
         <div className="or-separator">
@@ -48,7 +49,7 @@ const Login = ({ authenticated }) => {
         </div>
         <SocialLogin />
         <span className="signup-link">
-          Don't have an account? <Link to="/signup">Sign up</Link>
+          Don't have an account? <Link to="/onconnect/signup">Sign up</Link>
         </span>
       </div>
     {/* </div> */}
