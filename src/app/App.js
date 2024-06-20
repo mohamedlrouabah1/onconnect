@@ -212,7 +212,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/login"
+              path="/onconnect/login"
               element={
                 this.state.authenticated ? (
                   <Navigate to="/onconnect" replace />
@@ -222,7 +222,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/signup"
+              path="/onconnect/signup"
               element={
                 this.state.authenticated ? (
                   <Navigate to="/onconnect" replace />

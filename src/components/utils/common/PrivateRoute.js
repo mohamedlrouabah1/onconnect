@@ -7,7 +7,7 @@ export const PrivateRoute = ({ children, authenticated, ...rest }) => {
   return authenticated ? (
     React.cloneElement(children, rest)
   ) : (
-    <Navigate to="/login" state={{ from: location }} replace />
+    <Navigate to="/onconnect/login" state={{ from: location }} replace />
   );
 };
 
@@ -22,7 +22,7 @@ export const SignupRoute = ({ children }) => {
     isRoleSelectionPath &&
     (!location.state || !location.state.userData || !location.state.fromSignup)
   ) {
-    return <Navigate to="/signup" replace />;
+    return <Navigate to="/onconnect/signup" replace />;
   }
 
   return React.cloneElement(children);
