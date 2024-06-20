@@ -30,19 +30,19 @@ const OnConnectBar = ({
 
   const getPageText = () => {
     switch (currentPath) {
-      case "/#/accueil":
+      case "/onconnect/accueil":
         return "Accueil";
-      case "/#/dashboard":
+      case "/onconnect/dashboard":
         return "Dashboard";
-      case "/#/agenda":
+      case "/onconnect/agenda":
         return "Agenda";
-      case "/#/contrats":
+      case "/onconnect/contrats":
         return "Contrats";
-      case "/#/getstarted":
+      case "/onconnect/getstarted":
         return "Get Started";
-      case "/#/settings":
+      case "/onconnect/settings":
         return "Settings";
-      case "/#/profile":
+      case "/onconnect/profile":
         return "Profile";
       default:
         return "";
@@ -72,38 +72,38 @@ const OnConnectBar = ({
       {/* La sidebar Onconnect */}
       <>
         <ul className={classNames("slickbar", { clicked: click })}>
-          <NavLink activeclassname="active" to="/#/accueil" className="item">
+          <NavLink activeclassname="active" to="/onconnect/accueil" className="item">
             <img src={Home} alt="Home" />
             <span className={classNames("text", { clicked: click })}>
               Accueil
             </span>
           </NavLink>
-          <NavLink activeclassname="active" to="/#/dashboard" className="item">
+          <NavLink activeclassname="active" to="/onconnect/dashboard" className="item">
             <img src={Team} alt="Team" />
             <span className={classNames("text", { clicked: click })}>
               Dashboard
             </span>
           </NavLink>
-          <NavLink activeclassname="active" to="/#/agenda" className="item">
+          <NavLink activeclassname="active" to="/onconnect/agenda" className="item">
             <img src={Calender} alt="Calender" />
             <span className={classNames("text", { clicked: click })}>
               Agenda
             </span>
           </NavLink>
-          <NavLink activeclassname="active" to="/#/contrats" className="item">
+          <NavLink activeclassname="active" to="/onconnect/contrats" className="item">
             <img src={Documents} alt="Documents" />
             <span className={classNames("text", { clicked: click })}>
               Contrats
             </span>
           </NavLink>
           {click && <h2 className="support">Support</h2>}
-          <NavLink activeclassname="active" to="/#/getstarted" className="item">
+          <NavLink activeclassname="active" to="/onconnect/getstarted" className="item">
             <img src={GetStarted} alt="Get Started" />
             <span className={classNames("text", { clicked: click })}>
               Get Started
             </span>
           </NavLink>
-          <NavLink activeclassname="active" to="/#/settings" className="item">
+          <NavLink activeclassname="active" to="/onconnect/settings" className="item">
             <img src={Settings} alt="Settings" />
             <span className={classNames("text", { clicked: click })}>
               Settings

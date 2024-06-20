@@ -9,7 +9,7 @@ const AppHeader = () => {
     <header className="app-header">
       <div className="container">
         <div className="app-branding">
-          <Link to="/#">
+          <Link to="/onconnect">
             <img src={logo} alt="OnConnect Logo" />
           </Link>
         </div>
@@ -17,10 +17,10 @@ const AppHeader = () => {
           <nav className="app-nav">
             <ul>
               <li>
-                <NavLink to="/#/login">Login</NavLink>
+                <NavLink to="/onconnect/login">Login</NavLink>
               </li>
               <li>
-                <NavLink to="/#/signup">Signup</NavLink>
+                <NavLink to="/onconnect/signup">Signup</NavLink>
               </li>
             </ul>
           </nav>
