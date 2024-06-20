@@ -20,7 +20,7 @@ const Login = ({ authenticated }) => {
   const location = useLocation();
 
   if (authenticated) {
-    navigate("/onconnect", { state: { from: location } });
+    navigate("/#", { state: { from: location } });
   }
 
   // Handle the error if it exists
@@ -41,7 +41,7 @@ const Login = ({ authenticated }) => {
         <h1 className="login-title">Login</h1>
         <p className="login-subtitle">test user name : devuser@example.com</p>
         <p className="login-subtitle">test user password: 1234</p>
-        <p className="login-subtitle">if redirect doesn't work : <br/> Please set url to https://mohamedlrouabah1.github.io/onconnect/ <br/> it's due to github static page</p>
+        <p className="login-subtitle">if redirect doesn't work : <br/> Please set url to https://mohamedlrouabah1.github.io/#/ <br/> it's due to github static page</p>
         </div>
         <LoginForm />
         <div className="or-separator">
@@ -49,7 +49,7 @@ const Login = ({ authenticated }) => {
         </div>
         <SocialLogin />
         <span className="signup-link">
-          Don't have an account? <Link to="/onconnect/signup">Sign up</Link>
+          Don't have an account? <Link to="/#/signup">Sign up</Link>
         </span>
       </div>
     {/* </div> */}

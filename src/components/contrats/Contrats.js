@@ -147,7 +147,7 @@ const Contrats = ({ currentUser, isSidebarOpen }) => {
                     <Badge bg={getStatusVariant(contrat.contratStatus)}>{contrat.contratStatus}</Badge>
                   </td>
                   <td>
-                  <Link to="/missions">Voir Les missions</Link>
+                  <Link to="/#/missions">Voir Les missions</Link>
                   </td>
                 </tr>
               ))}

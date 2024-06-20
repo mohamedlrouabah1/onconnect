@@ -19,9 +19,9 @@ const OAuth2RedirectHandler = () => {
 
   if (token) {
     localStorage.setItem(ACCESS_TOKEN, token);
-    return navigate("/profile", { state: { from: location } });
+    return navigate("/#/profile", { state: { from: location } });
   } else {
-    return navigate("/login", {
+    return navigate("/#/login", {
       state: {
         from: location,
         error: error,

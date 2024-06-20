@@ -11,7 +11,6 @@ import Settings from "../../images/sidebar/settings.svg";
 import GetStarted from "../../images/sidebar/starred.svg";
 import SidebarProfile from "../profile/sidebarProfile/SidebarProfile.js";
 import { NavLink, useLocation } from "react-router-dom";
-import { Col, Row } from "react-bootstrap";
 // import Header from '../header/Header.js';
 const OnConnectBar = ({
   onLogout,
@@ -31,19 +30,19 @@ const OnConnectBar = ({
 
   const getPageText = () => {
     switch (currentPath) {
-      case "/accueil":
+      case "/#/accueil":
         return "Accueil";
-      case "/dashboard":
+      case "/#/dashboard":
         return "Dashboard";
-      case "/agenda":
+      case "/#/agenda":
         return "Agenda";
-      case "/contrats":
+      case "/#/contrats":
         return "Contrats";
-      case "/getstarted":
+      case "/#/getstarted":
         return "Get Started";
-      case "/settings":
+      case "/#/settings":
         return "Settings";
-      case "/profile":
+      case "/#/profile":
         return "Profile";
       default:
         return "";
@@ -73,38 +72,38 @@ const OnConnectBar = ({
       {/* La sidebar Onconnect */}
       <>
         <ul className={classNames("slickbar", { clicked: click })}>
-          <NavLink activeclassname="active" to="/accueil" className="item">
+          <NavLink activeclassname="active" to="/#/accueil" className="item">
             <img src={Home} alt="Home" />
             <span className={classNames("text", { clicked: click })}>
               Accueil
             </span>
           </NavLink>
-          <NavLink activeclassname="active" to="/dashboard" className="item">
+          <NavLink activeclassname="active" to="/#/dashboard" className="item">
             <img src={Team} alt="Team" />
             <span className={classNames("text", { clicked: click })}>
               Dashboard
             </span>
           </NavLink>
-          <NavLink activeclassname="active" to="/agenda" className="item">
+          <NavLink activeclassname="active" to="/#/agenda" className="item">
             <img src={Calender} alt="Calender" />
             <span className={classNames("text", { clicked: click })}>
               Agenda
             </span>
           </NavLink>
-          <NavLink activeclassname="active" to="/contrats" className="item">
+          <NavLink activeclassname="active" to="/#/contrats" className="item">
             <img src={Documents} alt="Documents" />
             <span className={classNames("text", { clicked: click })}>
               Contrats
             </span>
           </NavLink>
           {click && <h2 className="support">Support</h2>}
-          <NavLink activeclassname="active" to="/getstarted" className="item">
+          <NavLink activeclassname="active" to="/#/getstarted" className="item">
             <img src={GetStarted} alt="Get Started" />
             <span className={classNames("text", { clicked: click })}>
               Get Started
             </span>
           </NavLink>
-          <NavLink activeclassname="active" to="/settings" className="item">
+          <NavLink activeclassname="active" to="/#/settings" className="item">
             <img src={Settings} alt="Settings" />
             <span className={classNames("text", { clicked: click })}>
               Settings
