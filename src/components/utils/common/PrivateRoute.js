@@ -7,7 +7,7 @@ export const PrivateRoute = ({ children, authenticated, ...rest }) => {
   return authenticated ? (
     React.cloneElement(children, rest)
   ) : (
-    <Navigate to="/onconnect/login" state={{ from: location }} replace />
+    <Navigate to="/login" state={{ from: location }} replace />
   );
 };
 

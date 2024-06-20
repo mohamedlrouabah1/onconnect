@@ -21,7 +21,7 @@ const RoleSelection = ({ userData }) => {
     signup(signupRequest)
       .then(() => {
         toast.success("You're successfully registered. You can Login now!");
-        navigate("/onconnect/login");
+        navigate("/login");
       })
       .catch((error) => {
         toast.error(

@@ -104,7 +104,7 @@ class App extends Component {
           <Routes >
             <Route path="/onconnect" element={<Home />} />
             <Route
-              path="/onconnect/profile"
+              path="/profile"
               element={
                 <PrivateRoute
                   authenticated={this.state.authenticated}
@@ -115,7 +115,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/accueil"
+              path="/accueil"
               element={
                 <PrivateRoute
                   authenticated={this.state.authenticated}
@@ -126,7 +126,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/dashboard"
+              path="/dashboard"
               element={
                 <PrivateRoute
                   authenticated={this.state.authenticated}
@@ -140,7 +140,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/contrats"
+              path="/contrats"
               element={
                 <PrivateRoute
                   authenticated={this.state.authenticated}
@@ -154,7 +154,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/agenda"
+              path="/agenda"
               element={
                 <PrivateRoute
                   authenticated={this.state.authenticated}
@@ -169,7 +169,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/annonces/:annonceId"
+              path="/annonces/:annonceId"
               element={
                 <PrivateRoute
                   authenticated={this.state.authenticated}
@@ -183,7 +183,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/missions"
+              path="/missions"
               element={
                 <PrivateRoute
                   authenticated={this.state.authenticated}
@@ -197,7 +197,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/facturation/:missionId"
+              path="/facturation/:missionId"
               element={
                 <PrivateRoute
                   authenticated={this.state.authenticated}
@@ -212,7 +212,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/login"
+              path="/login"
               element={
                 this.state.authenticated ? (
                   <Navigate to="/onconnect" replace />
@@ -222,7 +222,7 @@ class App extends Component {
               }
             />
             <Route
-              path="/onconnect/signup"
+              path="/signup"
               element={
                 this.state.authenticated ? (
                   <Navigate to="/onconnect" replace />

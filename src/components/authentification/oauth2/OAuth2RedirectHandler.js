@@ -19,9 +19,9 @@ const OAuth2RedirectHandler = () => {
 
   if (token) {
     localStorage.setItem(ACCESS_TOKEN, token);
-    return navigate("/onconnect/profile", { state: { from: location } });
+    return navigate("/profile", { state: { from: location } });
   } else {
-    return navigate("/onconnect/login", {
+    return navigate("/login", {
       state: {
         from: location,
         error: error,
