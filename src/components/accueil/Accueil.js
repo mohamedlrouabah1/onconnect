@@ -191,7 +191,7 @@ const Accueil = ({ isSidebarOpen, currentUser }) => {
 
   const linkToDetails = (annonceId) => {
     console.log('Annonce ID before navigating:', annonceId);
-    navigate(`/annonces/${annonceId}`);
+    navigate(`/onconnect/annonces/${annonceId}`);
       // window.location.href = `/annonces`;
   };
   return (

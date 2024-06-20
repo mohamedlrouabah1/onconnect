@@ -40,7 +40,7 @@ const SidebarProfile = ({ currentUser, onLogout, isExpanded }) => {
               </Dropdown.Item>
               <Dropdown.Item>
                   <NavLink 
-                      to="/profile"
+                      to="/onconnect/profile"
                       style={{ textDecoration: 'none', color: 'inherit' }}
                       activestyle={{ fontWeight: 'bold' }}
                 >
@@ -49,7 +49,7 @@ const SidebarProfile = ({ currentUser, onLogout, isExpanded }) => {
               </Dropdown.Item>
               <Dropdown.Item>
               <NavLink 
-                  to="/settings"
+                  to="/onconnect/settings"
                   style={{ textDecoration: 'none', color: 'inherit' }}
                   activestyle={{ fontWeight: 'bold' }}
                 >
